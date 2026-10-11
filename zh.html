@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>語荷教育 Yuhe Education — 普通話、粵語與中文口語表達</title>
+<meta name="description" content="杜薇老師 — 普通話、粵語、朗誦與口語表達。兒童課程、學校課程、企業普通話培訓。香港。">
+<link rel="icon" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<style>
+  :root{
+    --paper:#FAF8F5;
+    --ink:#263238;
+    --muted:#6B7780;
+    --rule:#E2DDD5;
+    --accent:#2C7A8C;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Songti SC",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang HK","PingFang SC",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--sans);font-size:17px;line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:820px;margin:0 auto;padding:0 30px}
+  header{padding:40px 0 0}
+  .top{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
+  .logo{height:96px;width:auto;display:block;mix-blend-mode:multiply}
+  .nav{display:flex;gap:20px;padding-top:12px;flex-wrap:wrap;justify-content:flex-end;font-size:15px}
+  .nav a{color:var(--muted);border-bottom:none}
+  .nav a:hover{color:var(--accent)}
+  .nav .lang{border-left:1px solid var(--rule);padding-left:20px}
+  h1{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(29px,5vw,44px);line-height:1.3;letter-spacing:-.01em;
+    margin:44px 0 0;max-width:20em;
+  }
+  .lede{margin:20px 0 0;font-size:18px;color:var(--muted);max-width:34em}
+  .cta{margin:30px 0 0;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-block;padding:12px 22px;border-radius:2px;
+    background:var(--ink);color:#fff;font-size:16px;border:none;
+  }
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule)}
+  .btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  h2{
+    font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.14em;
+    color:var(--muted);margin:0 0 26px;
+  }
+  section{padding:64px 0 0}
+  .rule{border-top:1px solid var(--rule);margin:64px 0 0}
+  .item{padding:26px 0 0;border-top:1px solid var(--rule)}
+  .item:first-of-type{border-top:none;padding-top:0}
+  .item h3{
+    font-family:var(--serif);font-weight:400;font-size:23px;margin:0 0 8px;letter-spacing:-.005em;
+  }
+  .item p{margin:0;color:var(--muted);max-width:38em}
+  .item p + p{margin-top:10px}
+  .tags{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+  .tags span{
+    font-size:14px;color:var(--ink);background:#fff;
+    border:1px solid var(--rule);padding:4px 12px;border-radius:2px;
+  }
+  .years{display:grid;grid-template-columns:120px 1fr;gap:0 24px}
+  .years dt{
+    color:var(--muted);font-size:15px;padding:15px 0;border-top:1px solid var(--rule);
+    font-variant-numeric:tabular-nums;
+  }
+  .years dd{margin:0;padding:15px 0;border-top:1px solid var(--rule);font-size:16px}
+  .years dt:first-of-type,.years dd:first-of-type{border-top:none;padding-top:0}
+  .years dd span{display:block;color:var(--muted);font-size:15px}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .card{
+    border:1px solid var(--rule);border-radius:3px;background:#fff;
+    padding:26px 28px;
+  }
+  .card .kicker{
+    font-size:12px;font-weight:600;letter-spacing:.14em;
+    color:var(--accent);margin:0 0 12px;
+  }
+  .card h3{font-family:var(--serif);font-weight:400;font-size:23px;margin:0 0 10px;letter-spacing:-.005em}
+  .card p{margin:0;color:var(--muted);font-size:16px;line-height:1.75}
+  .card p + p{margin-top:10px}
+  .feature{border-left:3px solid var(--accent)}
+  footer{margin:76px 0 0;padding:28px 0 56px;border-top:1px solid var(--rule);color:var(--muted);font-size:15px}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(44,122,140,.32)}
+  a:hover{border-bottom-color:var(--accent)}
+  @media (max-width:640px){
+    .cards{grid-template-columns:1fr}
+    .years{grid-template-columns:1fr}
+    .years dt{padding-bottom:0;border-top:1px solid var(--rule)}
+    .years dd{padding-top:2px;border-top:none}
+    .years dt:first-of-type{border-top:none}
+  }
+  @media (max-width:520px){
+    .wrap{padding:0 22px}
+    .logo{height:74px}
+    .top{flex-direction:column;gap:10px}
+    .nav{justify-content:flex-start;padding-top:0}
+    header{padding-top:30px}
+    section{padding-top:48px}
+    .rule{margin-top:48px}
+    h1{margin-top:30px}
+    .btn{padding:11px 18px;font-size:15px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="top">
+      <img class="logo" src="logo.png" alt="語荷教育 Yuhe Education">
+      <nav class="nav">
+        <a href="#teach">教授範圍</a>
+        <a href="#corporate">企業培訓</a>
+        <a href="#background">資歷</a>
+        <a href="#workshops">課程與工作坊</a>
+        <a href="#contact">聯絡</a>
+        <a class="lang" href="./">English</a>
+      </nav>
+    </div>
+
+    <h1>普通話、粵語，<br>與中文口語表達。</h1>
+    <p class="lede">我是杜薇老師。教中文——教孩子、教成人、教學校，也教需要跟內地團隊打交道的企業。</p>
+    <div class="cta">
+      <a class="btn" href="#contact">與我聯絡</a>
+      <a class="btn ghost" href="#workshops">課程與合作</a>
+    </div>
+  </header>
+
+  <section id="teach">
+    <h2>教授範圍</h2>
+
+    <div class="item">
+      <h3>普通話與粵語</h3>
+      <p>從第一個字到能自然地說話。一對一、小組、面授或線上——對象包括孩子、成人，也包括從來沒學過聲調語言的初學者。</p>
+    </div>
+
+    <div class="item">
+      <h3>朗誦與口語表達</h3>
+      <p>聲音、節奏、台風。比賽訓練、學校課程，以及給任何需要站到人前說話的人的訓練。</p>
+    </div>
+
+    <div class="item">
+      <h3>戲劇與表演</h3>
+      <p>為青少年而設的中文戲劇——在排練與演出裡長出自信、表達力與默契。</p>
+    </div>
+
+    <div class="item">
+      <h3>職場普通話</h3>
+      <p>給需要與內地同事、客戶往來的團隊：真正用得上的句子、行得通的語氣，以及怎樣才不會被誤解。</p>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section id="corporate">
+    <h2>企業與職場普通話</h2>
+
+    <div class="item">
+      <h3>教過的企業</h3>
+      <p>曾為多家機構設計及教授普通話課程，包括柯達、耐克、人頭馬、Equity Trust 及英皇集團；亦為銀行、保險、金融機構及國際學校提供內部培訓。</p>
+      <div class="tags">
+        <span>柯達 Kodak</span>
+        <span>耐克 Nike</span>
+        <span>人頭馬 Rémy Martin</span>
+        <span>Equity Trust</span>
+        <span>英皇集團 Emperor Group</span>
+        <span>銀行</span>
+        <span>保險</span>
+        <span>金融</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>從零開始的非華語學員</h3>
+      <p>我的企業學員以外籍人士為主——大多從零起步，也有教到中級。二十年來，我教的就是這些只帶著一份願意來上課的成人。</p>
+    </div>
+
+    <div class="item">
+      <h3>在職員工的內部培訓</h3>
+      <p>任職期間，我也為自己的同事開過普通話課——Caring International，以及英基教育服務（ESF）辦公室。</p>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section id="background">
+    <h2>資歷</h2>
+    <dl class="years">
+      <dt>2019 至今</dt>
+      <dd>香港學校朗誦節評判</dd>
+      <dt>2018 – 2025</dt>
+      <dd>滬江維多利亞學校中文教師 <span>國際學校</span></dd>
+      <dt>2007 – 2010</dt>
+      <dd>英基教育服務（ESF）現代外語統籌主任 <span>設計六級中文課程</span></dd>
+      <dt>2005 – 2007</dt>
+      <dd>香港語言學館普通話主管 <span>負責說話、聆聽及商業普通話課程設計</span></dd>
+      <dt>2003 – 2005</dt>
+      <dd>香港中文大學新亞—耶魯—中國語文中心中文教師</dd>
+      <dt>2003 – 2005</dt>
+      <dd>香港中文大學普通話教育及發展中心普通話導師 <span>教授本地學校普通話教師標準北京口音的說話及聆聽技巧</span></dd>
+      <dt>2001 – 2003</dt>
+      <dd>英國文化協會（香港）普通話教師</dd>
+      <dt>學歷</dt>
+      <dd>香港中文大學語言學文學碩士 <span>2005</span></dd>
+      <dt>&nbsp;</dt>
+      <dd>香港中文大學教育文憑（主修普通話教育）<span>2003</span></dd>
+      <dt>&nbsp;</dt>
+      <dd>香港科技大學市場學工商管理學士 <span>1997</span></dd>
+      <dt>現在</dt>
+      <dd>職業訓練局青年學院職場中文講師 <span>並創辦語荷教育</span></dd>
+    </dl>
+  </section>
+
+  <div class="rule"></div>
+
+  <section id="workshops">
+    <h2>課程與合作</h2>
+
+    <div class="cards">
+      <div class="card">
+        <p class="kicker">企業</p>
+        <h3>團隊真的用得上的普通話</h3>
+        <p>圍繞你團隊真實的場景來設計——電話、開會、接待、寒暄。不用教科書，不做語法操練。</p>
+      </div>
+      <div class="card">
+        <p class="kicker">學校</p>
+        <h3>中文課程與課程設計</h3>
+        <p>課程規劃、能力級別框架、教師培訓——設計過六級課程，也教過教這些課的老師。</p>
+      </div>
+      <div class="card">
+        <p class="kicker">學生</p>
+        <h3>朗誦節訓練</h3>
+        <p>由朗誦節評判親自訓練：獨誦與集誦，聲音、節奏、感情——以及評判真正在聽什麼。</p>
+      </div>
+      <div class="card">
+        <p class="kicker">任何人</p>
+        <h3>一小時普通話</h3>
+        <p>給完全初學者的第一課。不講語法、不用教科書、沒有功課，第一分鐘就開口說話。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section id="contact">
+    <h2>近期活動</h2>
+    <div class="card feature">
+      <p class="kicker">工作坊</p>
+      <h3>一小時普通話——來玩就好</h3>
+      <p>10 月 30 日（星期五）上午 · 灣仔</p>
+      <p>給完全沒學過的人，也給學過一次就放棄的人。跟一屋子同樣從零開始的人一起發出一些聲音。有興趣請電郵與我聯絡。</p>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>杜薇 Kathryn To</strong> · 語荷教育 Yuhe Education · 香港<br>
+    <a href="mailto:yuheeducation@gmail.com">yuheeducation@gmail.com</a><br>
+    香港面授 · 線上全球授課</p>
+  </footer>
+
+</div>
+</body>
+</html>
