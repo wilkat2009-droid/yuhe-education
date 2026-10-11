@@ -71,6 +71,15 @@
   .years dd{margin:0;padding:15px 0;border-top:1px solid var(--rule);font-size:16px}
   .years dt:first-of-type,.years dd:first-of-type{border-top:none;padding-top:0}
   .years dd span{display:block;color:var(--muted);font-size:15px}
+  .courses{display:grid;grid-template-columns:1fr 1fr;gap:0 34px}
+  .course{padding:20px 0;border-top:1px solid var(--rule)}
+  .course h3{font-family:var(--serif);font-weight:400;font-size:20px;margin:0 0 6px;letter-spacing:-.005em}
+  .course p{margin:0;color:var(--muted);font-size:15.5px;line-height:1.7}
+  .grouplabel{
+    grid-column:1/-1;padding:26px 0 0;font-size:12px;font-weight:600;
+    letter-spacing:.14em;color:var(--accent);
+  }
+  .grouplabel:first-child{padding-top:0}
   .cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
   .card{
     border:1px solid var(--rule);border-radius:3px;background:#fff;
@@ -115,6 +124,7 @@
       <img class="logo" src="logo.png" alt="語荷教育 Yuhe Education">
       <nav class="nav">
         <a href="#teach">教授範圍</a>
+        <a href="#courses">課程</a>
         <a href="#corporate">企業培訓</a>
         <a href="#background">資歷</a>
         <a href="#workshops">課程與工作坊</a>
@@ -152,6 +162,57 @@
     <div class="item">
       <h3>職場普通話</h3>
       <p>給需要與內地同事、客戶往來的團隊：真正用得上的句子、行得通的語氣，以及怎樣才不會被誤解。</p>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section id="courses">
+    <h2>課程</h2>
+    <div class="courses">
+      <p class="grouplabel">成人</p>
+      <div class="course">
+        <h3>成人粵語</h3>
+        <p>實用的粵語入門與進階——為工作、為家庭，也為在香港的日常生活。</p>
+      </div>
+      <div class="course">
+        <h3>普通話（從零開始）</h3>
+        <p>給從未學過聲調語言的成人。先開口說，再認字。</p>
+      </div>
+      <div class="course">
+        <h3>職場普通話</h3>
+        <p>給需要跟內地往來的專業人士與團隊：電話、開會、接待、寒暄。</p>
+      </div>
+
+      <p class="grouplabel">兒童與青少年</p>
+      <div class="course">
+        <h3>兒童粵語</h3>
+        <p>給粵語城市裡長大的孩子，用遊戲和故事學粵語。</p>
+      </div>
+      <div class="course">
+        <h3>拼音與正音</h3>
+        <p>快速掌握聲母、韻母、聲調，以及會讓人聽不懂的那些習慣。</p>
+      </div>
+      <div class="course">
+        <h3>朗誦與口語表達</h3>
+        <p>獨誦、集誦、朗誦節訓練——聲音、節奏、台風，在人前把話說清楚。</p>
+      </div>
+      <div class="course">
+        <h3>小司儀</h3>
+        <p>主持、串場、掌控舞台——給喜歡說話、敢站上台的孩子。</p>
+      </div>
+      <div class="course">
+        <h3>兒童戲劇</h3>
+        <p>在排練與演出裡練習聲音、身體、表達，還有跟別人合作。</p>
+      </div>
+      <div class="course">
+        <h3>中華文化</h3>
+        <p>節氣節日、故事、詩詞、飲食——讓孩子知道自己從哪裡來。</p>
+      </div>
+      <div class="course">
+        <h3>升小面試</h3>
+        <p>給 K3 孩子的短期密集準備，本地與國際學校皆適用。</p>
+      </div>
     </div>
   </section>
 

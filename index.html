@@ -84,6 +84,15 @@
   }
   .years dt:first-of-type,.years dd:first-of-type{border-top:none;padding-top:0}
   .years dd span{display:block;color:var(--muted);font-size:15px}
+  .courses{display:grid;grid-template-columns:1fr 1fr;gap:0 34px}
+  .course{padding:20px 0;border-top:1px solid var(--rule)}
+  .course h3{font-family:var(--serif);font-weight:400;font-size:20px;margin:0 0 6px;letter-spacing:-.005em}
+  .course p{margin:0;color:var(--muted);font-size:15.5px}
+  .grouplabel{
+    grid-column:1/-1;padding:26px 0 0;font-size:12px;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  }
+  .grouplabel:first-child{padding-top:0}
   .cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
   .card{
     border:1px solid var(--rule);border-radius:3px;background:#fff;
@@ -127,7 +136,7 @@
     <div class="top">
       <img class="logo" src="logo.png" alt="Yuhe Education 語荷教育">
       <nav class="nav">
-        <a href="#teach">What I teach</a>
+        <a href="#courses">Courses</a>
         <a href="#corporate">Corporate</a>
         <a href="#background">Background</a>
         <a href="#workshops">Workshops</a>
@@ -165,6 +174,57 @@
     <div class="item">
       <h3>Workplace Mandarin</h3>
       <p>Practical Mandarin for teams who deal with Mainland China: the phrases you actually use, the tone that works, and how not to be misunderstood.</p>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section id="courses">
+    <h2>Courses</h2>
+    <div class="courses">
+      <p class="grouplabel">For adults</p>
+      <div class="course">
+        <h3>Cantonese for adults</h3>
+        <p>A practical route into spoken Cantonese — for work, for family, or for daily life in Hong Kong.</p>
+      </div>
+      <div class="course">
+        <h3>Mandarin from zero</h3>
+        <p>For adults who have never studied a tone language. Speaking first, characters later.</p>
+      </div>
+      <div class="course">
+        <h3>Workplace Mandarin</h3>
+        <p>For professionals and teams dealing with Mainland China — calls, meetings, hosting, small talk.</p>
+      </div>
+
+      <p class="grouplabel">For children &amp; teenagers</p>
+      <div class="course">
+        <h3>Cantonese for children</h3>
+        <p>Play-based Cantonese for young learners growing up in a Cantonese-speaking city.</p>
+      </div>
+      <div class="course">
+        <h3>Pinyin &amp; pronunciation</h3>
+        <p>A fast pronunciation course — the sounds, the tones, and the habits that make you understood.</p>
+      </div>
+      <div class="course">
+        <h3>Recitation &amp; public speaking</h3>
+        <p>Solo and choral recitation, Speech Festival coaching, and speaking clearly in front of a room.</p>
+      </div>
+      <div class="course">
+        <h3>Young MC 小司儀</h3>
+        <p>Presenting, hosting and holding a stage — for primary-age children who like to be heard.</p>
+      </div>
+      <div class="course">
+        <h3>Drama in Chinese</h3>
+        <p>Ensemble performance for young people: voice, body, expression and working with others.</p>
+      </div>
+      <div class="course">
+        <h3>Chinese culture</h3>
+        <p>Festivals, stories, poetry and food — a course that grows a child's sense of where they come from.</p>
+      </div>
+      <div class="course">
+        <h3>Primary school interviews</h3>
+        <p>Short, intensive preparation for K3 children facing Primary 1 interviews — local and international schools.</p>
+      </div>
     </div>
   </section>
 
